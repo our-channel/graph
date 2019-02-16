@@ -1,0 +1,1 @@
+[{"constant":false,"inputs":[{"name":"ipfsAddress","type":"bytes"},{"name":"to","type":"address"}],"name":"sendMessage","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"ipfsAddress","type":"bytes"},{"indexed":false,"name":"to","type":"address"}],"name":"MessageSend","type":"event"}]

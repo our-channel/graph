@@ -1,8 +1,8 @@
 specVersion: 0.0.1
 description: Gravatar for Ethereum
-repository: https://github.com/rodventures/gravity-subgraph
+repository: 'https://github.com/rodventures/gravity-subgraph'
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: GenerateEvent
@@ -18,8 +18,8 @@ dataSources:
         - MessageSend
       abis:
         - name: GenerateEvent
-          file: ./abis/GenerateEvent.json
+          file: GenerateEvent/abis/GenerateEvent.json
       eventHandlers:
-        - event: MessageSend(bytes,address)
+        - event: 'MessageSend(bytes,address)'
           handler: handleMessageSend
-      file: ./src/mapping.ts
+      file: GenerateEvent/GenerateEvent.wasm
